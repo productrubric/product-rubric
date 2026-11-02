@@ -9,6 +9,10 @@
  * - about: the server's identity card (name, version, author, licenses,
  *   library counts, links), so questions like "who made this?" are
  *   answered by the server rather than guessed by the model.
+ * - list_cards / get_card: a bonus form of the library, not a second
+ *   library. Each card is one criterion from one rubric, plus a cover
+ *   card per rubric, for one-check-at-a-time use. For a full review,
+ *   use list_rubrics and get_rubric first.
  *
  * Prompts: ready-made starting points (apply a rubric, review a
  * survey, critique a design board, author a new rubric) that clients
@@ -27,9 +31,10 @@ import {
 } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
 import type { Library } from "./library.js";
+import type { CardLibrary } from "./cards.js";
 
 export const SERVER_NAME = "product-rubric";
-export const SERVER_VERSION = "1.0.0";
+export const SERVER_VERSION = "1.1.0";
 
 export const ABOUT = {
   name: "ProductRubric",
@@ -40,7 +45,9 @@ export const ABOUT = {
     "rubrics for AI UX audits and design evaluation in product design; " +
     "for study plans, surveys, findings, and competitive analysis in UX research; " +
     "for PRDs, roadmaps, problem statements, user stories, and project plans in product management; " +
-    "and for positioning, messaging, launch plans, and battlecards in marketing.",
+    "and for positioning, messaging, launch plans, and battlecards in marketing. " +
+    "As a bonus, the same rubrics are also available as 147 cards, one criterion per card across 4 decks, " +
+    "for one-check-at-a-time use; the rubrics remain the library, the cards are not a second library.",
   author: "David Nguyen",
   author_url: "https://davidnguyen.com/",
   repository: "https://github.com/productrubric/product-rubric",
@@ -57,6 +64,7 @@ const INSTRUCTIONS = [
     ", serving format version 1.",
   "How to work: call list_rubrics to see the available rubrics, then get_rubric to fetch one rubric's full text, then apply that rubric exactly as written to the material the user provides (a screen, a board, a study plan, a questionnaire, a readout). Each rubric defines its own criteria, scoring, output format, and honesty rules. Follow them as given. Do not merge two rubrics into one report, do not soften a rubric's honesty rules, and do not invent criteria the rubric does not contain. Where a rubric is based on a published framework or standard, that framework is its author's; the rubric file credits it.",
   "Back-and-forth: some rubrics (level: deep, and any rubric with a Context requests section) ask for context the artifact alone does not carry, such as the goal of the piece, its audience, or the decision a study feeds. When a rubric asks for context, ask the user for it, in one grouped round, before judging, and proceed with the rubric's not-judged rules for anything the user cannot supply. Context can be supplied in conversation; evidence cannot, and anything judged from a description rather than the artifact itself must be flagged as such, as the rubrics specify.",
+  "Cards, as a bonus: the same rubrics are also available as cards, one criterion per card, through list_cards and get_card. Use a card when the user wants one check at a time, for example in a crit, a team session, or as an ice breaker, or when they name a card by deck and number. For a full review, or a ship decision, use list_rubrics and get_rubric first: the rubrics are the library, the cards are a bonus form of them, not a replacement and not a second library. A card's url points to its page on productrubric.com, where it can be flipped, printed, and shared.",
   "Identity questions: if the user asks who made this, what version this is, or what ProductRubric is, answer from the about tool rather than guessing. Each rubric file carries its own version and, where it is based on a published source, its attribution; preserve that attribution when you report results.",
   "The server is read-only and holds no user data. The material being evaluated never passes through it; your evaluation happens here, in this conversation.",
 ].join("\n\n");
@@ -65,6 +73,8 @@ const SUBMIT_INSTRUCTIONS =
   "This hosted server also offers submit_rubric: it submits a finished rubric and its worked example to the library as a pull request under the user's own GitHub account, and calling it asks the user to sign in with GitHub if they have not. Use it when the user has approved both files and is ready to submit, as the author_a_rubric prompt describes. A submission carries only those two files.";
 
 export interface BuildOptions {
+  /** Bonus card library, generated from the rubric files at build time. */
+  cards?: CardLibrary;
   /** Hosted server only: advertise the submit_rubric tool. */
   submitEnabled?: boolean;
   /** Hosted server only: run a submission with this request's GitHub token. */
@@ -204,6 +214,7 @@ export function buildServer(library: Library, opts?: BuildOptions): McpServer {
       const payload = {
         ...ABOUT,
         rubrics: { total: all.length, by_category: byCategory, by_level: byLevel },
+        ...(opts?.cards ? { cards: { total: opts.cards.count(), decks: opts.cards.decks() } } : {}),
       };
       return {
         content: [
@@ -213,6 +224,59 @@ export function buildServer(library: Library, opts?: BuildOptions): McpServer {
       };
     },
   );
+
+  if (opts?.cards) {
+    const cards = opts.cards;
+    server.registerTool(
+      "list_cards",
+      {
+        title: "List cards",
+        description:
+          "List the ProductRubric cards, a bonus form of the library: one criterion per card, plus a cover card per rubric, across 4 decks. " +
+          "Returns each card's deck, number, rubric, title, and url, with the principle for criteria. " +
+          "For a full review, use list_rubrics and get_rubric first: the rubrics are the library, the cards are a bonus, not a replacement. " +
+          "Pass a deck (for example, marketing) to filter, or leave it out for all 147 cards.",
+        inputSchema: {
+          deck: z.string().optional().describe("Optional deck name to filter by: product-design, product-management, marketing, or ux-research."),
+        },
+        outputSchema: {
+          count: z.number(),
+          cards: z.array(z.object({
+            deck: z.string(), num: z.number(), rubric: z.string(), cover: z.boolean(),
+            title: z.string(), principle: z.string(), url: z.string(),
+          })),
+        },
+        annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
+      },
+      async ({ deck }) => {
+        const list = cards.list(deck).map((c) => ({ deck: c.deck, num: c.num, rubric: c.rubric, cover: c.cover, title: c.title, principle: c.principle, url: c.url }));
+        const payload = { count: list.length, cards: list };
+        return { content: [{ type: "text", text: JSON.stringify(payload, null, 2) }], structuredContent: payload };
+      },
+    );
+
+    server.registerTool(
+      "get_card",
+      {
+        title: "Get a card",
+        description:
+          "Get one ProductRubric card by deck and number, for one-check-at-a-time use: its title, principle, what to examine, what good looks like, and what bad looks like, plus its rubric and its card url on productrubric.com. " +
+          "For a full review, use get_rubric first: the rubrics are the library, the cards are a bonus, not a replacement.",
+        inputSchema: {
+          deck: z.string().describe("The deck name: product-design, product-management, marketing, or ux-research."),
+          num: z.number().describe("The card number within the deck, as returned by list_cards."),
+        },
+        annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
+      },
+      async ({ deck, num }) => {
+        const card = cards.get(deck, num);
+        if (!card) {
+          return { isError: true, content: [{ type: "text", text: `Unknown card "${deck} ${num}". Use list_cards to see the available decks and numbers.` }] };
+        }
+        return { content: [{ type: "text", text: JSON.stringify(card, null, 2) }] };
+      },
+    );
+  }
 
   if (opts?.submitEnabled) {
     server.registerTool(
