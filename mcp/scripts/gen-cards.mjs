@@ -50,14 +50,28 @@ function parseRubric(text) {
   }
   const criteria = [];
   const parts = text.split(/\n###\s+/);
-  for (const part of parts.slice(1)) {
+  for (let part of parts.slice(1)) {
+    // A criterion ends at the next level-2 heading, not just at the
+    // next "### " criterion. Rubric files are "## Criteria" then
+    // "### n. ..." criteria, then "## Scoring", "## Output format",
+    // and so on, so without this the last criterion's body swallows
+    // every following rubric-level section. The field regex below
+    // currently masks that only because its "m" flag makes "$"
+    // match at the end of the bullet's line; a wrapped field value
+    // would leak the Scoring appendix into the card. Truncating
+    // here makes the boundary explicit for every field, and the
+    // lookahead below is kept as a second guard. No criterion body
+    // legitimately contains a "\n## " heading (verified across all
+    // 21 rubric files: only the last criterion's part contains one,
+    // and it is always a following rubric-level section).
+    part = part.split("\n## ")[0];
     const first = part.split("\n")[0].trim();
     const title = first.replace(/^\d+\.\s*/, "").trim();
     const body = part.slice(first.length);
     const principleMatch = body.match(/^\s*([\s\S]*?)\n- What/);
     const principle = principleMatch ? strip(principleMatch[1]) : "";
     const field = (label) => {
-      const m = body.match(new RegExp(`- ${label.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}:\\s*([\\s\\S]*?)(?=\\n- |\\n### |$)`, "m"));
+      const m = body.match(new RegExp(`- ${label.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}:\\s*([\\s\\S]*?)(?=\\n- |\\n### |\\n## |$)`, "m"));
       return m ? strip(m[1]) : null;
     };
     criteria.push({
