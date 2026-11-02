@@ -1,0 +1,1031 @@
+[
+  {
+    "deck": "product-design",
+    "num": 1,
+    "rubric": "Accessibility Review",
+    "card_title": "Accessibility Review",
+    "cover": true
+  },
+  {
+    "deck": "product-design",
+    "num": 2,
+    "rubric": "Accessibility Review",
+    "card_title": "Perceivable: text readability",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 3,
+    "rubric": "Accessibility Review",
+    "card_title": "Perceivable: meaning never rides on color alone",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 4,
+    "rubric": "Accessibility Review",
+    "card_title": "Operable: targets and spacing",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 5,
+    "rubric": "Accessibility Review",
+    "card_title": "Visible state and order",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 6,
+    "rubric": "Accessibility Review",
+    "card_title": "Understandable: labels, instructions, and errors",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 7,
+    "rubric": "Accessibility Review",
+    "card_title": "Robust: what the picture cannot promise",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 8,
+    "rubric": "Attention Prediction",
+    "card_title": "Attention Prediction",
+    "cover": true
+  },
+  {
+    "deck": "product-design",
+    "num": 9,
+    "rubric": "Attention Prediction",
+    "card_title": "Size and visual weight",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 10,
+    "rubric": "Attention Prediction",
+    "card_title": "Contrast and color distinction",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 11,
+    "rubric": "Attention Prediction",
+    "card_title": "Faces and human imagery",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 12,
+    "rubric": "Attention Prediction",
+    "card_title": "Position and reading gravity",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 13,
+    "rubric": "Attention Prediction",
+    "card_title": "Isolation and whitespace",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 14,
+    "rubric": "Copy Review",
+    "card_title": "Copy Review",
+    "cover": true
+  },
+  {
+    "deck": "product-design",
+    "num": 15,
+    "rubric": "Copy Review",
+    "card_title": "Fit the space",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 16,
+    "rubric": "Copy Review",
+    "card_title": "Specific and clear",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 17,
+    "rubric": "Copy Review",
+    "card_title": "Action language where it belongs",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 18,
+    "rubric": "Copy Review",
+    "card_title": "Communicate the value",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 19,
+    "rubric": "Copy Review",
+    "card_title": "Fit the hierarchy and the context",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 20,
+    "rubric": "Design Principles Score",
+    "card_title": "Design Principles Score",
+    "cover": true
+  },
+  {
+    "deck": "product-design",
+    "num": 21,
+    "rubric": "Design Principles Score",
+    "card_title": "Empower User Control",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 22,
+    "rubric": "Design Principles Score",
+    "card_title": "Build Consistent Experience",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 23,
+    "rubric": "Design Principles Score",
+    "card_title": "Favor Recognition",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 24,
+    "rubric": "Design Principles Score",
+    "card_title": "Prevent and Recover from Errors",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 25,
+    "rubric": "Design Principles Score",
+    "card_title": "Balance Minimalism and Support",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 26,
+    "rubric": "Design Quality",
+    "card_title": "Design Quality",
+    "cover": true
+  },
+  {
+    "deck": "product-design",
+    "num": 27,
+    "rubric": "Design Quality",
+    "card_title": "Right problem",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 28,
+    "rubric": "Design Quality",
+    "card_title": "Grounded in evidence",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 29,
+    "rubric": "Design Quality",
+    "card_title": "Holds together as a system",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 30,
+    "rubric": "Design Quality",
+    "card_title": "Flow quality",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 31,
+    "rubric": "Design Quality",
+    "card_title": "Execution and polish",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 32,
+    "rubric": "Design Quality",
+    "card_title": "Words do their job",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 33,
+    "rubric": "Design Quality",
+    "card_title": "Explains itself",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 34,
+    "rubric": "Five Second Test",
+    "card_title": "Five Second Test",
+    "cover": true
+  },
+  {
+    "deck": "product-design",
+    "num": 35,
+    "rubric": "Five Second Test",
+    "card_title": "Attention capture",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 36,
+    "rubric": "Five Second Test",
+    "card_title": "Message clarity",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 37,
+    "rubric": "Five Second Test",
+    "card_title": "Action clarity",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 38,
+    "rubric": "Inclusive Design Audit",
+    "card_title": "Inclusive Design Audit",
+    "cover": true
+  },
+  {
+    "deck": "product-design",
+    "num": 39,
+    "rubric": "Inclusive Design Audit",
+    "card_title": "Representation & Bias",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 40,
+    "rubric": "Inclusive Design Audit",
+    "card_title": "Cultural Sensitivity",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 41,
+    "rubric": "Inclusive Design Audit",
+    "card_title": "Fair Access",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 42,
+    "rubric": "Inclusive Design Audit",
+    "card_title": "Inclusive Messaging",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 43,
+    "rubric": "Inclusive Design Audit",
+    "card_title": "Power Dynamics",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 44,
+    "rubric": "Usability Heuristics Review",
+    "card_title": "Usability Heuristics Review",
+    "cover": true
+  },
+  {
+    "deck": "product-design",
+    "num": 45,
+    "rubric": "Usability Heuristics Review",
+    "card_title": "Visibility of System Status",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 46,
+    "rubric": "Usability Heuristics Review",
+    "card_title": "Match Between the System and the Real World",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 47,
+    "rubric": "Usability Heuristics Review",
+    "card_title": "User Control and Freedom",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 48,
+    "rubric": "Usability Heuristics Review",
+    "card_title": "Consistency and Standards",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 49,
+    "rubric": "Usability Heuristics Review",
+    "card_title": "Error Prevention",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 50,
+    "rubric": "Usability Heuristics Review",
+    "card_title": "Recognition Rather than Recall",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 51,
+    "rubric": "Usability Heuristics Review",
+    "card_title": "Flexibility and Efficiency of Use",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 52,
+    "rubric": "Usability Heuristics Review",
+    "card_title": "Aesthetic and Minimalist Design",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 53,
+    "rubric": "Usability Heuristics Review",
+    "card_title": "Help Users Recognize, Diagnose, and Recover from Errors",
+    "cover": false
+  },
+  {
+    "deck": "product-design",
+    "num": 54,
+    "rubric": "Usability Heuristics Review",
+    "card_title": "Help and Documentation",
+    "cover": false
+  },
+  {
+    "deck": "product-management",
+    "num": 1,
+    "rubric": "PRD Review",
+    "card_title": "PRD Review",
+    "cover": true
+  },
+  {
+    "deck": "product-management",
+    "num": 2,
+    "rubric": "PRD Review",
+    "card_title": "The problem is established before the solution",
+    "cover": false
+  },
+  {
+    "deck": "product-management",
+    "num": 3,
+    "rubric": "PRD Review",
+    "card_title": "Goals and non-goals make scope decidable",
+    "cover": false
+  },
+  {
+    "deck": "product-management",
+    "num": 4,
+    "rubric": "PRD Review",
+    "card_title": "Success is defined and measurable",
+    "cover": false
+  },
+  {
+    "deck": "product-management",
+    "num": 5,
+    "rubric": "PRD Review",
+    "card_title": "The solution is specified to the level decisions need",
+    "cover": false
+  },
+  {
+    "deck": "product-management",
+    "num": 6,
+    "rubric": "PRD Review",
+    "card_title": "Edge cases, dependencies, and rollout are named",
+    "cover": false
+  },
+  {
+    "deck": "product-management",
+    "num": 7,
+    "rubric": "PRD Review",
+    "card_title": "Open questions and assumptions are labeled",
+    "cover": false
+  },
+  {
+    "deck": "product-management",
+    "num": 8,
+    "rubric": "PRD Review",
+    "card_title": "The reasoning survives the author",
+    "cover": false
+  },
+  {
+    "deck": "product-management",
+    "num": 9,
+    "rubric": "Problem Statement Review",
+    "card_title": "Problem Statement Review",
+    "cover": true
+  },
+  {
+    "deck": "product-management",
+    "num": 10,
+    "rubric": "Problem Statement Review",
+    "card_title": "The person with the problem is specific",
+    "cover": false
+  },
+  {
+    "deck": "product-management",
+    "num": 11,
+    "rubric": "Problem Statement Review",
+    "card_title": "Evidence the problem exists",
+    "cover": false
+  },
+  {
+    "deck": "product-management",
+    "num": 12,
+    "rubric": "Problem Statement Review",
+    "card_title": "The cost of the status quo is stated",
+    "cover": false
+  },
+  {
+    "deck": "product-management",
+    "num": 13,
+    "rubric": "Problem Statement Review",
+    "card_title": "The statement is solution-free",
+    "cover": false
+  },
+  {
+    "deck": "product-management",
+    "num": 14,
+    "rubric": "Problem Statement Review",
+    "card_title": "The boundary is drawn",
+    "cover": false
+  },
+  {
+    "deck": "product-management",
+    "num": 15,
+    "rubric": "Project Plan Review",
+    "card_title": "Project Plan Review",
+    "cover": true
+  },
+  {
+    "deck": "product-management",
+    "num": 16,
+    "rubric": "Project Plan Review",
+    "card_title": "The outcome and the scope boundary are decidable",
+    "cover": false
+  },
+  {
+    "deck": "product-management",
+    "num": 17,
+    "rubric": "Project Plan Review",
+    "card_title": "Milestones are verifiable states",
+    "cover": false
+  },
+  {
+    "deck": "product-management",
+    "num": 18,
+    "rubric": "Project Plan Review",
+    "card_title": "Estimates take the outside view",
+    "cover": false
+  },
+  {
+    "deck": "product-management",
+    "num": 19,
+    "rubric": "Project Plan Review",
+    "card_title": "The critical path is visible and protected",
+    "cover": false
+  },
+  {
+    "deck": "product-management",
+    "num": 20,
+    "rubric": "Project Plan Review",
+    "card_title": "A living register",
+    "cover": false
+  },
+  {
+    "deck": "product-management",
+    "num": 21,
+    "rubric": "Project Plan Review",
+    "card_title": "Ownership and decision rights are singular",
+    "cover": false
+  },
+  {
+    "deck": "product-management",
+    "num": 22,
+    "rubric": "Project Plan Review",
+    "card_title": "The plan knows how it will change",
+    "cover": false
+  },
+  {
+    "deck": "product-management",
+    "num": 23,
+    "rubric": "Roadmap Review",
+    "card_title": "Roadmap Review",
+    "cover": true
+  },
+  {
+    "deck": "product-management",
+    "num": 24,
+    "rubric": "Roadmap Review",
+    "card_title": "Organized by outcomes, not outputs",
+    "cover": false
+  },
+  {
+    "deck": "product-management",
+    "num": 25,
+    "rubric": "Roadmap Review",
+    "card_title": "Every item traces to a strategy",
+    "cover": false
+  },
+  {
+    "deck": "product-management",
+    "num": 26,
+    "rubric": "Roadmap Review",
+    "card_title": "Time horizons are honest",
+    "cover": false
+  },
+  {
+    "deck": "product-management",
+    "num": 27,
+    "rubric": "Roadmap Review",
+    "card_title": "Dependencies and capacity are visible",
+    "cover": false
+  },
+  {
+    "deck": "product-management",
+    "num": 28,
+    "rubric": "Roadmap Review",
+    "card_title": "What is not on it is clear",
+    "cover": false
+  },
+  {
+    "deck": "product-management",
+    "num": 29,
+    "rubric": "Roadmap Review",
+    "card_title": "It is current, dated, and owned",
+    "cover": false
+  },
+  {
+    "deck": "product-management",
+    "num": 30,
+    "rubric": "User Story Review",
+    "card_title": "User Story Review",
+    "cover": true
+  },
+  {
+    "deck": "product-management",
+    "num": 31,
+    "rubric": "User Story Review",
+    "card_title": "Valuable to a named user",
+    "cover": false
+  },
+  {
+    "deck": "product-management",
+    "num": 32,
+    "rubric": "User Story Review",
+    "card_title": "Independent",
+    "cover": false
+  },
+  {
+    "deck": "product-management",
+    "num": 33,
+    "rubric": "User Story Review",
+    "card_title": "Negotiable",
+    "cover": false
+  },
+  {
+    "deck": "product-management",
+    "num": 34,
+    "rubric": "User Story Review",
+    "card_title": "Estimable",
+    "cover": false
+  },
+  {
+    "deck": "product-management",
+    "num": 35,
+    "rubric": "User Story Review",
+    "card_title": "Small",
+    "cover": false
+  },
+  {
+    "deck": "product-management",
+    "num": 36,
+    "rubric": "User Story Review",
+    "card_title": "Testable, and confirmed by its criteria",
+    "cover": false
+  },
+  {
+    "deck": "marketing",
+    "num": 1,
+    "rubric": "Battlecard Review",
+    "card_title": "Battlecard Review",
+    "cover": true
+  },
+  {
+    "deck": "marketing",
+    "num": 2,
+    "rubric": "Battlecard Review",
+    "card_title": "Claims are sourced and dated",
+    "cover": false
+  },
+  {
+    "deck": "marketing",
+    "num": 3,
+    "rubric": "Battlecard Review",
+    "card_title": "The competitor's strengths are stated honestly",
+    "cover": false
+  },
+  {
+    "deck": "marketing",
+    "num": 4,
+    "rubric": "Battlecard Review",
+    "card_title": "The card arms both directions",
+    "cover": false
+  },
+  {
+    "deck": "marketing",
+    "num": 5,
+    "rubric": "Battlecard Review",
+    "card_title": "Usable in the moment: say it, show it",
+    "cover": false
+  },
+  {
+    "deck": "marketing",
+    "num": 6,
+    "rubric": "Battlecard Review",
+    "card_title": "Freshness is owned",
+    "cover": false
+  },
+  {
+    "deck": "marketing",
+    "num": 7,
+    "rubric": "Launch Plan Review",
+    "card_title": "Launch Plan Review",
+    "cover": true
+  },
+  {
+    "deck": "marketing",
+    "num": 8,
+    "rubric": "Launch Plan Review",
+    "card_title": "The tier is named",
+    "cover": false
+  },
+  {
+    "deck": "marketing",
+    "num": 9,
+    "rubric": "Launch Plan Review",
+    "card_title": "Every audience has a moment",
+    "cover": false
+  },
+  {
+    "deck": "marketing",
+    "num": 10,
+    "rubric": "Launch Plan Review",
+    "card_title": "Internal readiness is planned",
+    "cover": false
+  },
+  {
+    "deck": "marketing",
+    "num": 11,
+    "rubric": "Launch Plan Review",
+    "card_title": "Execution is sequenced, owned, and dated",
+    "cover": false
+  },
+  {
+    "deck": "marketing",
+    "num": 12,
+    "rubric": "Launch Plan Review",
+    "card_title": "Success is instrumented",
+    "cover": false
+  },
+  {
+    "deck": "marketing",
+    "num": 13,
+    "rubric": "Launch Plan Review",
+    "card_title": "Risk and rollback are planned",
+    "cover": false
+  },
+  {
+    "deck": "marketing",
+    "num": 14,
+    "rubric": "Launch Plan Review",
+    "card_title": "The plan survives a slip",
+    "cover": false
+  },
+  {
+    "deck": "marketing",
+    "num": 15,
+    "rubric": "Messaging Review",
+    "card_title": "Messaging Review",
+    "cover": true
+  },
+  {
+    "deck": "marketing",
+    "num": 16,
+    "rubric": "Messaging Review",
+    "card_title": "Leads with an insight",
+    "cover": false
+  },
+  {
+    "deck": "marketing",
+    "num": 17,
+    "rubric": "Messaging Review",
+    "card_title": "Engages alternatives honestly",
+    "cover": false
+  },
+  {
+    "deck": "marketing",
+    "num": 18,
+    "rubric": "Messaging Review",
+    "card_title": "Differentiated value leads",
+    "cover": false
+  },
+  {
+    "deck": "marketing",
+    "num": 19,
+    "rubric": "Messaging Review",
+    "card_title": "Proof is attached, at the right strength",
+    "cover": false
+  },
+  {
+    "deck": "marketing",
+    "num": 20,
+    "rubric": "Messaging Review",
+    "card_title": "The customer is the subject",
+    "cover": false
+  },
+  {
+    "deck": "marketing",
+    "num": 21,
+    "rubric": "Messaging Review",
+    "card_title": "Objections are anticipated, and the ask is clear",
+    "cover": false
+  },
+  {
+    "deck": "marketing",
+    "num": 22,
+    "rubric": "Positioning Review",
+    "card_title": "Positioning Review",
+    "cover": true
+  },
+  {
+    "deck": "marketing",
+    "num": 23,
+    "rubric": "Positioning Review",
+    "card_title": "Competitive alternatives are the real ones",
+    "cover": false
+  },
+  {
+    "deck": "marketing",
+    "num": 24,
+    "rubric": "Positioning Review",
+    "card_title": "Unique attributes are actually unique",
+    "cover": false
+  },
+  {
+    "deck": "marketing",
+    "num": 25,
+    "rubric": "Positioning Review",
+    "card_title": "Value follows from the attributes, and proof exists",
+    "cover": false
+  },
+  {
+    "deck": "marketing",
+    "num": 26,
+    "rubric": "Positioning Review",
+    "card_title": "Target market is specific",
+    "cover": false
+  },
+  {
+    "deck": "marketing",
+    "num": 27,
+    "rubric": "Positioning Review",
+    "card_title": "Market category is chosen, not defaulted",
+    "cover": false
+  },
+  {
+    "deck": "marketing",
+    "num": 28,
+    "rubric": "Positioning Review",
+    "card_title": "The five components cohere",
+    "cover": false
+  },
+  {
+    "deck": "ux-research",
+    "num": 1,
+    "rubric": "Competitive Analysis Review",
+    "card_title": "Competitive Analysis Review",
+    "cover": true
+  },
+  {
+    "deck": "ux-research",
+    "num": 2,
+    "rubric": "Competitive Analysis Review",
+    "card_title": "The competitor set is complete",
+    "cover": false
+  },
+  {
+    "deck": "ux-research",
+    "num": 3,
+    "rubric": "Competitive Analysis Review",
+    "card_title": "Evidence is first-hand",
+    "cover": false
+  },
+  {
+    "deck": "ux-research",
+    "num": 4,
+    "rubric": "Competitive Analysis Review",
+    "card_title": "Comparison dimensions serve the customer's decision",
+    "cover": false
+  },
+  {
+    "deck": "ux-research",
+    "num": 5,
+    "rubric": "Competitive Analysis Review",
+    "card_title": "Competitor strengths are honest",
+    "cover": false
+  },
+  {
+    "deck": "ux-research",
+    "num": 6,
+    "rubric": "Competitive Analysis Review",
+    "card_title": "Observation, interpretation, implication separate",
+    "cover": false
+  },
+  {
+    "deck": "ux-research",
+    "num": 7,
+    "rubric": "Competitive Analysis Review",
+    "card_title": "Currency and upkeep",
+    "cover": false
+  },
+  {
+    "deck": "ux-research",
+    "num": 8,
+    "rubric": "Findings Review",
+    "card_title": "Findings Review",
+    "cover": true
+  },
+  {
+    "deck": "ux-research",
+    "num": 9,
+    "rubric": "Findings Review",
+    "card_title": "Claims trace to evidence",
+    "cover": false
+  },
+  {
+    "deck": "ux-research",
+    "num": 10,
+    "rubric": "Findings Review",
+    "card_title": "Observation and interpretation stay separate",
+    "cover": false
+  },
+  {
+    "deck": "ux-research",
+    "num": 11,
+    "rubric": "Findings Review",
+    "card_title": "Disconfirming evidence is present",
+    "cover": false
+  },
+  {
+    "deck": "ux-research",
+    "num": 12,
+    "rubric": "Findings Review",
+    "card_title": "Recommendations stay proportional",
+    "cover": false
+  },
+  {
+    "deck": "ux-research",
+    "num": 13,
+    "rubric": "Findings Review",
+    "card_title": "The basis is stated honestly",
+    "cover": false
+  },
+  {
+    "deck": "ux-research",
+    "num": 14,
+    "rubric": "Findings Review",
+    "card_title": "Participant voice is representative",
+    "cover": false
+  },
+  {
+    "deck": "ux-research",
+    "num": 15,
+    "rubric": "Study Plan Review",
+    "card_title": "Study Plan Review",
+    "cover": true
+  },
+  {
+    "deck": "ux-research",
+    "num": 16,
+    "rubric": "Study Plan Review",
+    "card_title": "Answerable questions",
+    "cover": false
+  },
+  {
+    "deck": "ux-research",
+    "num": 17,
+    "rubric": "Study Plan Review",
+    "card_title": "Method fits the questions",
+    "cover": false
+  },
+  {
+    "deck": "ux-research",
+    "num": 18,
+    "rubric": "Study Plan Review",
+    "card_title": "Participants match the questions",
+    "cover": false
+  },
+  {
+    "deck": "ux-research",
+    "num": 19,
+    "rubric": "Study Plan Review",
+    "card_title": "Scope and decisions",
+    "cover": false
+  },
+  {
+    "deck": "ux-research",
+    "num": 20,
+    "rubric": "Study Plan Review",
+    "card_title": "Procedure and materials",
+    "cover": false
+  },
+  {
+    "deck": "ux-research",
+    "num": 21,
+    "rubric": "Study Plan Review",
+    "card_title": "Risks, bias, and ethics",
+    "cover": false
+  },
+  {
+    "deck": "ux-research",
+    "num": 22,
+    "rubric": "Survey Review",
+    "card_title": "Survey Review",
+    "cover": true
+  },
+  {
+    "deck": "ux-research",
+    "num": 23,
+    "rubric": "Survey Review",
+    "card_title": "Neutral wording",
+    "cover": false
+  },
+  {
+    "deck": "ux-research",
+    "num": 24,
+    "rubric": "Survey Review",
+    "card_title": "One question per question",
+    "cover": false
+  },
+  {
+    "deck": "ux-research",
+    "num": 25,
+    "rubric": "Survey Review",
+    "card_title": "Answerable from the respondent's position",
+    "cover": false
+  },
+  {
+    "deck": "ux-research",
+    "num": 26,
+    "rubric": "Survey Review",
+    "card_title": "Scales that behave",
+    "cover": false
+  },
+  {
+    "deck": "ux-research",
+    "num": 27,
+    "rubric": "Survey Review",
+    "card_title": "Answer options that cover the truth",
+    "cover": false
+  },
+  {
+    "deck": "ux-research",
+    "num": 28,
+    "rubric": "Survey Review",
+    "card_title": "Order that does not contaminate",
+    "cover": false
+  },
+  {
+    "deck": "ux-research",
+    "num": 29,
+    "rubric": "Survey Review",
+    "card_title": "Every question earns its place",
+    "cover": false
+  }
+]
