@@ -41,6 +41,8 @@ import { Library } from "./library.js";
 import { buildServer } from "./server.js";
 import { extractEvents } from "./stats.js";
 import { RUBRICS } from "./rubrics.generated.js";
+import { CARDS } from "./cards.generated.js";
+import { CardLibrary } from "./cards.js";
 import { handleSubmitHost, performSubmission, type SubmitEnv } from "./submit.js";
 import {
   handleAuthRoutes,
@@ -72,6 +74,10 @@ function embeddedLibrary(): Library {
   const library = new Library();
   for (const [id, text] of Object.entries(RUBRICS)) library.add(id, text);
   return library;
+}
+
+function embeddedCards(): CardLibrary {
+  return new CardLibrary(CARDS as never);
 }
 
 export default {
@@ -131,7 +137,7 @@ export default {
     }
     if (url.pathname === "/" && request.method === "GET") {
       return new Response(
-        "ProductRubric MCP server. Connect an MCP client to this URL to use the list_rubrics, get_rubric, and about tools. Documentation: https://github.com/productrubric/product-rubric",
+        "ProductRubric MCP server. Connect an MCP client to this URL to use the list_rubrics, get_rubric, and about tools, plus the bonus list_cards and get_card tools. Documentation: https://github.com/productrubric/product-rubric",
         { headers: { "content-type": "text/plain; charset=utf-8" } },
       );
     }
@@ -153,6 +159,7 @@ export default {
     }
 
     const server = buildServer(embeddedLibrary(), {
+      cards: embeddedCards(),
       submitEnabled: asConfigured,
       submitter,
     });
